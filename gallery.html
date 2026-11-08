@@ -101,7 +101,7 @@
     <!-- Page Hero -->
     <section class="page-hero">
       <div class="page-hero__bg">
-        <img src="/ananami_project-master/assets/wpp daun.jpg" alt="Ananami Landscape gallery" loading="lazy">
+        <img src="assets/wpp daun.jpg" alt="Ananami Landscape gallery" loading="lazy">
         <div class="page-hero__overlay"></div>
       </div>
       <div class="page-hero__content container">
@@ -112,268 +112,421 @@
       </div>
     </section>
 
-    <!-- Gallery Carousel Section -->
-    <section class="section gallery-carousel-section">
+    <!-- Gallery Overview -->
+    <section class="section gallery-overview">
       <div class="container">
-        <div class="section-header">
-          <p class="section-header__eyebrow">Featured Gallery</p>
-          <h2 class="section-header__title">OUR WORK IN <span>PICTURES</span></h2>
+        <div class="section-header" data-reveal>
+          <p class="section-header__eyebrow">Browse by Chapter</p>
+          <h2 class="section-header__title">STORIES BEHIND <span>THE GREENERY</span></h2>
           <div class="section-header__divider"></div>
-          <p class="section-header__subtitle">A visual journey through our landscape design and construction projects</p>
+          <p class="section-header__subtitle">Our work is best told one chapter at a time. Pick a chapter below to explore the photos behind every stage of the process.</p>
         </div>
 
-        <!-- Carousel -->
-        <div class="gallery-carousel" id="galleryCarousel">
-          <div class="gallery-carousel__track" id="carouselTrack">
+        <nav class="gallery-chapters" aria-label="Gallery chapters" data-reveal>
+          <a href="#chapter-design"><span>01</span> Landscape Design</a>
+          <a href="#chapter-construction"><span>02</span> Landscape Construction</a>
+          <a href="#chapter-maintenance"><span>03</span> Landscape Maintenance</a>
+          <a href="#chapter-plants"><span>04</span> Garden Details</a>
+        </nav>
+      </div>
+    </section>
 
-            <!-- Slide 1 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Private Villa Lombok landscape design" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">01</span>
-                <h3>Private Villa Lombok</h3>
-                <p class="gallery-slide__location">Lombok, Indonesia</p>
-                <p class="gallery-slide__desc">A luxurious villa landscape featuring tropical planting, natural stone pathways, and a stunning pool area that blends seamlessly with the surrounding environment.</p>
-                <div class="gallery-slide__tags">
-                  <span>Landscape Design</span>
-                  <span>Tropical Planting</span>
-                  <span>Pool Area</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Taman Villa Bali landscape" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">02</span>
-                <h3>Taman Villa</h3>
-                <p class="gallery-slide__location">Ciputra Resort, Bali</p>
-                <p class="gallery-slide__desc">A resort-style villa garden with lush tropical greenery, elegant water features, and carefully curated plant selections that create a serene atmosphere.</p>
-                <div class="gallery-slide__tags">
-                  <span>Resort Landscape</span>
-                  <span>Water Features</span>
-                  <span>Tropical Greenery</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=85" alt="Private House Bali landscape" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">03</span>
-                <h3>Private House Bali</h3>
-                <p class="gallery-slide__location">Bali, Indonesia</p>
-                <p class="gallery-slide__desc">A residential landscape design that harmonizes tropical nature with modern living, featuring native plants, natural materials, and sustainable design principles.</p>
-                <div class="gallery-slide__tags">
-                  <span>Residential</span>
-                  <span>Sustainable Design</span>
-                  <span>Native Plants</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" alt="Design Tabanan landscape" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">04</span>
-                <h3>Landscape Design Tabanan</h3>
-                <p class="gallery-slide__location">Tabanan, Bali</p>
-                <p class="gallery-slide__desc">A residential landscape project in Tabanan featuring a harmonious blend of tropical nature and modern aesthetics, with carefully selected plants and natural materials.</p>
-                <div class="gallery-slide__tags">
-                  <span>Landscape Design</span>
-                  <span>Residential</span>
-                  <span>Modern Aesthetics</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85" alt="Balinese landscape details" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">05</span>
-                <h3>Balinese Landscape Details</h3>
-                <p class="gallery-slide__location">Bali, Indonesia</p>
-                <p class="gallery-slide__desc">Intricate Balinese landscape details featuring traditional stone carvings, native tropical plants, and authentic architectural elements that reflect the rich cultural heritage.</p>
-                <div class="gallery-slide__tags">
-                  <span>Balinese Style</span>
-                  <span>Stone Carving</span>
-                  <span>Cultural Heritage</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 6 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80" alt="Landscape construction process" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">06</span>
-                <h3>Landscape Construction</h3>
-                <p class="gallery-slide__location">Building Greener Tomorrow</p>
-                <p class="gallery-slide__desc">Behind the scenes of our landscape construction process — from geotextile installation and drainage systems to soil preparation and final leveling.</p>
-                <div class="gallery-slide__tags">
-                  <span>Construction</span>
-                  <span>Drainage Systems</span>
-                  <span>Soil Preparation</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 7 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Landscape build process" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">07</span>
-                <h3>Landscape Build</h3>
-                <p class="gallery-slide__location">Dry Garden & Tropical</p>
-                <p class="gallery-slide__desc">Our landscape build process featuring dry garden design, tropical plant installation, and vertical garden systems that bring life to any outdoor space.</p>
-                <div class="gallery-slide__tags">
-                  <span>Build Process</span>
-                  <span>Dry Garden</span>
-                  <span>Vertical Garden</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 8 -->
-            <div class="gallery-slide">
-              <div class="gallery-slide__image">
-                <img src="https://images.unsplash.com/photo-1592417817098-8f3d6ef23a28?q=80&w=1200&auto=format&fit=crop" alt="Landscape maintenance" loading="lazy">
-              </div>
-              <div class="gallery-slide__content">
-                <span class="gallery-slide__number">08</span>
-                <h3>Landscape Maintenance</h3>
-                <p class="gallery-slide__location">Sustainable Landscapes</p>
-                <p class="gallery-slide__desc">Professional landscape maintenance services including plant care, pruning, irrigation system checks, and garden routine maintenance to keep your outdoor space beautiful year-round.</p>
-                <div class="gallery-slide__tags">
-                  <span>Maintenance</span>
-                  <span>Plant Care</span>
-                  <span>Irrigation</span>
-                </div>
-              </div>
-            </div>
-
+    <!-- Chapter 01: Landscape Design -->
+    <section class="gallery-block" id="chapter-design" data-gallery-block>
+      <div class="container">
+        <div class="gallery-block__head" data-reveal>
+          <div class="gallery-block__intro">
+            <p class="gallery-block__eyebrow"><span>Chapter 01</span> — Design</p>
+            <h2 class="gallery-block__title">LANDSCAPE <span>DESIGN</span></h2>
+            <p class="gallery-block__desc">Every project starts with a site study, a sketch, and a planting concept. These photos capture the ideas that shape our gardens before the first stone is laid.</p>
           </div>
+          <div class="gallery-block__controls">
+            <span class="gallery-block__counter"><b data-carousel-current>01</b><span class="gallery-block__counter-sep">/</span><span data-carousel-total>04</span></span>
+            <button type="button" class="gallery-nav__btn" data-carousel-prev aria-label="Previous design photos"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="gallery-nav__btn" data-carousel-next aria-label="Next design photos"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
 
-          <!-- Carousel Controls -->
-          <button class="gallery-carousel__btn gallery-carousel__btn--prev" id="carouselPrev" aria-label="Previous slide">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-          <button class="gallery-carousel__btn gallery-carousel__btn--next" id="carouselNext" aria-label="Next slide">
-            <i class="fa-solid fa-chevron-right"></i>
-          </button>
+        <div class="photo-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Landscape design photos">
+          <div class="photo-carousel__viewport" data-carousel-viewport tabindex="0">
+            <div class="photo-carousel__track" data-carousel-track>
 
-          <!-- Carousel Indicators -->
-          <div class="gallery-carousel__indicators" id="carouselIndicators"></div>
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/air%20terjun.jpg" data-alt="Tropical waterfall and pool">
+                  <img src="assets/lanscape%20DESIGN%20porto/air%20terjun.jpg" alt="Tropical waterfall and pool" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Water Feature</span>
+                  <h3 class="photo-card__title">Tropical Waterfall</h3>
+                  <p class="photo-card__place">Private Garden · Semarang</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/fire.jpg" data-alt="Fire pit lounge at sunset">
+                  <img src="assets/lanscape%20DESIGN%20porto/fire.jpg" alt="Fire pit lounge at sunset" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Outdoor Living</span>
+                  <h3 class="photo-card__title">Fire Pit Lounge</h3>
+                  <p class="photo-card__place">Evening Ambience</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/kolam%20dalam.jpg" data-alt="Indoor pool courtyard">
+                  <img src="assets/lanscape%20DESIGN%20porto/kolam%20dalam.jpg" alt="Indoor pool courtyard" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Pool Design</span>
+                  <h3 class="photo-card__title">Indoor Pool Courtyard</h3>
+                  <p class="photo-card__place">Residential · Semarang</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/kolam%20luar.jpg" data-alt="Outdoor pool deck">
+                  <img src="assets/lanscape%20DESIGN%20porto/kolam%20luar.jpg" alt="Outdoor pool deck" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Pool Design</span>
+                  <h3 class="photo-card__title">Outdoor Pool Deck</h3>
+                  <p class="photo-card__place">Resort-style Garden</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/pohon.jpg" data-alt="Signature tree in a Balinese garden">
+                  <img src="assets/lanscape%20DESIGN%20porto/pohon.jpg" alt="Signature tree in a Balinese garden" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Planting</span>
+                  <h3 class="photo-card__title">Signature Tree</h3>
+                  <p class="photo-card__place">Balinese Garden</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20DESIGN%20porto/tangga.jpg" data-alt="Tropical garden stairs">
+                  <img src="assets/lanscape%20DESIGN%20porto/tangga.jpg" alt="Tropical garden stairs" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Hardscape</span>
+                  <h3 class="photo-card__title">Garden Stairs</h3>
+                  <p class="photo-card__place">Tropical Entrance</p>
+                </figcaption>
+              </figure>
+
+
+            </div>
+          </div>
+          <div class="photo-carousel__progress" aria-hidden="true"><span data-carousel-progress></span></div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery Grid Section -->
-    <section class="section gallery-grid-section">
+    <!-- Chapter 02: Landscape Construction -->
+    <section class="gallery-block gallery-block--alt" id="chapter-construction" data-gallery-block>
       <div class="container">
-        <div class="section-header">
-          <p class="section-header__eyebrow">More Photos</p>
-          <h2 class="section-header__title">GALLERY <span>GRID</span></h2>
-          <div class="section-header__divider"></div>
-          <p class="section-header__subtitle">Explore more moments from our projects and team activities</p>
+        <div class="gallery-block__head" data-reveal>
+          <div class="gallery-block__intro">
+            <p class="gallery-block__eyebrow"><span>Chapter 02</span> — Construction</p>
+            <h2 class="gallery-block__title">LANDSCAPE <span>CONSTRUCTION</span></h2>
+            <p class="gallery-block__desc">From geotextile and drainage to stone setting and planting, this chapter follows the hands-on build that turns a drawing into a living landscape.</p>
+          </div>
+          <div class="gallery-block__controls">
+            <span class="gallery-block__counter"><b data-carousel-current>01</b><span class="gallery-block__counter-sep">/</span><span data-carousel-total>05</span></span>
+            <button type="button" class="gallery-nav__btn" data-carousel-prev aria-label="Previous construction photos"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="gallery-nav__btn" data-carousel-next aria-label="Next construction photos"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=600&auto=format&fit=crop" alt="Landscape design concept" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1200&auto=format&fit=crop">
-            <div class="gallery-grid__overlay">
-              <h4>Landscape Design</h4>
-              <p>Concept & Planning</p>
+        <div class="photo-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Landscape construction photos">
+          <div class="photo-carousel__viewport" data-carousel-viewport tabindex="0">
+            <div class="photo-carousel__track" data-carousel-track>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/step1.jpg" data-alt="Pool base preparation and waterproofing">
+                  <img src="assets/lanscape%20CONSTRUCTION/step1.jpg" alt="Pool base preparation and waterproofing" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Step 01</span>
+                  <h3 class="photo-card__title">Site Preparation</h3>
+                  <p class="photo-card__place">Base &amp; Waterproofing</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/step2.jpg" data-alt="Drainage trench filled with gravel">
+                  <img src="assets/lanscape%20CONSTRUCTION/step2.jpg" alt="Drainage trench filled with gravel" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Step 02</span>
+                  <h3 class="photo-card__title">Drainage &amp; Gravel</h3>
+                  <p class="photo-card__place">Water Management</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/step3.jpg" data-alt="Soil preparation for planting">
+                  <img src="assets/lanscape%20CONSTRUCTION/step3.jpg" alt="Soil preparation for planting" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Step 03</span>
+                  <h3 class="photo-card__title">Soil Preparation</h3>
+                  <p class="photo-card__place">Planting Medium</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/step4.jpg" data-alt="Sand and stone finishing layers">
+                  <img src="assets/lanscape%20CONSTRUCTION/step4.jpg" alt="Sand and stone finishing layers" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Step 04</span>
+                  <h3 class="photo-card__title">Finishing Layers</h3>
+                  <p class="photo-card__place">Sand &amp; Stone Base</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/step5.jpg" data-alt="Structural detail during construction">
+                  <img src="assets/lanscape%20CONSTRUCTION/step5.jpg" alt="Structural detail during construction" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Step 05</span>
+                  <h3 class="photo-card__title">Structural Detail</h3>
+                  <p class="photo-card__place">Final Construction</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/TS_step4.jpg" data-alt="Tree transplanting with the on-site team">
+                  <img src="assets/lanscape%20CONSTRUCTION/TS_step4.jpg" alt="Tree transplanting with the on-site team" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Tree Relocation</span>
+                  <h3 class="photo-card__title">Tree Transplanting</h3>
+                  <p class="photo-card__place">On-site Team</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lanscape%20CONSTRUCTION/TS_step5.jpg" data-alt="Tree placement and final positioning">
+                  <img src="assets/lanscape%20CONSTRUCTION/TS_step5.jpg" alt="Tree placement and final positioning" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Installation</span>
+                  <h3 class="photo-card__title">Tree Placement</h3>
+                  <p class="photo-card__place">Final Positioning</p>
+                </figcaption>
+              </figure>
+
+
             </div>
           </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" alt="Modern landscape architecture" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop">
-            <div class="gallery-grid__overlay">
-              <h4>Modern Architecture</h4>
-              <p>Clean Lines</p>
+          <div class="photo-carousel__progress" aria-hidden="true"><span data-carousel-progress></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 03: Landscape Maintenance -->
+    <section class="gallery-block" id="chapter-maintenance" data-gallery-block>
+      <div class="container">
+        <div class="gallery-block__head" data-reveal>
+          <div class="gallery-block__intro">
+            <p class="gallery-block__eyebrow"><span>Chapter 03</span> — Maintenance</p>
+            <h2 class="gallery-block__title">LANDSCAPE <span>MAINTENANCE</span></h2>
+            <p class="gallery-block__desc">A garden is never finished. These photos show the routine care — pruning, plant health checks, and irrigation — that keeps every space beautiful all year.</p>
+          </div>
+          <div class="gallery-block__controls">
+            <span class="gallery-block__counter"><b data-carousel-current>01</b><span class="gallery-block__counter-sep">/</span><span data-carousel-total>02</span></span>
+            <button type="button" class="gallery-nav__btn" data-carousel-prev aria-label="Previous maintenance photos"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="gallery-nav__btn" data-carousel-next aria-label="Next maintenance photos"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="photo-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Landscape maintenance photos">
+          <div class="photo-carousel__viewport" data-carousel-viewport tabindex="0">
+            <div class="photo-carousel__track" data-carousel-track>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lancsape%20MAINTENANCE/Inspection%20%26%20Plant%20Health.png" data-alt="Inspection and plant health check">
+                  <img src="assets/lancsape%20MAINTENANCE/Inspection%20%26%20Plant%20Health.png" alt="Inspection and plant health check" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Inspection</span>
+                  <h3 class="photo-card__title">Plant Health Check</h3>
+                  <p class="photo-card__place">Routine Inspection</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lancsape%20MAINTENANCE/Watering%20%26%20Fertilization.png" data-alt="Watering and fertilization">
+                  <img src="assets/lancsape%20MAINTENANCE/Watering%20%26%20Fertilization.png" alt="Watering and fertilization" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Watering</span>
+                  <h3 class="photo-card__title">Watering &amp; Fertilization</h3>
+                  <p class="photo-card__place">Plant Nutrition</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lancsape%20MAINTENANCE/Cleaning%20%26%20Maintenance.png" data-alt="Cleaning and garden maintenance">
+                  <img src="assets/lancsape%20MAINTENANCE/Cleaning%20%26%20Maintenance.png" alt="Cleaning and garden maintenance" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Cleaning</span>
+                  <h3 class="photo-card__title">Cleaning &amp; Maintenance</h3>
+                  <p class="photo-card__place">Garden Tidy-Up</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/lancsape%20MAINTENANCE/Plant%20Care%20%26%20Pruning.png" data-alt="Plant care and pruning">
+                  <img src="assets/lancsape%20MAINTENANCE/Plant%20Care%20%26%20Pruning.png" alt="Plant care and pruning" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Pruning</span>
+                  <h3 class="photo-card__title">Plant Care &amp; Pruning</h3>
+                  <p class="photo-card__place">Shaping &amp; Care</p>
+                </figcaption>
+              </figure>
+
+
             </div>
           </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1599824422221-50e50438b4d8?auto=format&fit=crop&w=600&q=80" alt="Tropical garden plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1599824422221-50e50438b4d8?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Tropical Garden</h4>
-              <p>Native Plants</p>
+          <div class="photo-carousel__progress" aria-hidden="true"><span data-carousel-progress></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 04: Garden Details -->
+    <section class="gallery-block gallery-block--alt" id="chapter-plants" data-gallery-block>
+      <div class="container">
+        <div class="gallery-block__head" data-reveal>
+          <div class="gallery-block__intro">
+            <p class="gallery-block__eyebrow"><span>Chapter 04</span> — Details</p>
+            <h2 class="gallery-block__title">GARDEN <span>DETAILS</span></h2>
+            <p class="gallery-block__desc">A closer look at the finishing touches — tropical foliage, natural stone paths, and quiet corners that make a garden feel complete.</p>
+          </div>
+          <div class="gallery-block__controls">
+            <span class="gallery-block__counter"><b data-carousel-current>01</b><span class="gallery-block__counter-sep">/</span><span data-carousel-total>05</span></span>
+            <button type="button" class="gallery-nav__btn" data-carousel-prev aria-label="Previous garden detail photos"><i class="fa-solid fa-chevron-left"></i></button>
+            <button type="button" class="gallery-nav__btn" data-carousel-next aria-label="Next garden detail photos"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+
+        <div class="photo-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Garden detail photos">
+          <div class="photo-carousel__viewport" data-carousel-viewport tabindex="0">
+            <div class="photo-carousel__track" data-carousel-track>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/daun_utama.jpg" data-alt="Tropical foliage detail">
+                  <img src="assets/daun_utama.jpg" alt="Tropical foliage detail" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Foliage</span>
+                  <h3 class="photo-card__title">Tropical Foliage</h3>
+                  <p class="photo-card__place">Plant Detail</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/detail3.png" data-alt="Stone walkway through the garden">
+                  <img src="assets/detail3.png" alt="Stone walkway through the garden" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Pathway</span>
+                  <h3 class="photo-card__title">Stone Walkway</h3>
+                  <p class="photo-card__place">Garden Detail</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/jalan.jpg" data-alt="Natural stone garden path">
+                  <img src="assets/jalan.jpg" alt="Natural stone garden path" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Hardscape</span>
+                  <h3 class="photo-card__title">Garden Path</h3>
+                  <p class="photo-card__place">Natural Stone</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/sofa.jpg" data-alt="Outdoor lounge corner">
+                  <img src="assets/sofa.jpg" alt="Outdoor lounge corner" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Outdoor Living</span>
+                  <h3 class="photo-card__title">Lounge Corner</h3>
+                  <p class="photo-card__place">Evening Setting</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/ananami%20vila.jpg" data-alt="Villa water garden">
+                  <img src="assets/ananami%20vila.jpg" alt="Villa water garden" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Villa Garden</span>
+                  <h3 class="photo-card__title">Villa Water Garden</h3>
+                  <p class="photo-card__place">Ananami Project</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/rumah%20pth.jpg" data-alt="Modern front yard with planters">
+                  <img src="assets/rumah%20pth.jpg" alt="Modern front yard with planters" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Residential</span>
+                  <h3 class="photo-card__title">Modern Front Yard</h3>
+                  <p class="photo-card__place">White House</p>
+                </figcaption>
+              </figure>
+
+              <figure class="photo-card">
+                <button type="button" class="photo-card__media" data-lightbox="assets/shaping%20ourdoor.jpg" data-alt="Garden steps and entrance">
+                  <img src="assets/shaping%20ourdoor.jpg" alt="Garden steps and entrance" loading="lazy">
+                  <span class="photo-card__zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>
+                </button>
+                <figcaption class="photo-card__body">
+                  <span class="photo-card__tag">Entrance</span>
+                  <h3 class="photo-card__title">Shaping the Outdoors</h3>
+                  <p class="photo-card__place">Garden Steps</p>
+                </figcaption>
+              </figure>
+
+
             </div>
           </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1610360341103-625293674ce8?auto=format&fit=crop&w=600&q=80" alt="Heliconia plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1610360341103-625293674ce8?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Heliconia</h4>
-              <p>Tropical Foliage</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1612053423719-7981cc1c18fb?auto=format&fit=crop&w=600&q=80" alt="Hanjuang Merah plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1612053423719-7981cc1c18fb?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Hanjuang Merah</h4>
-              <p>Color Accent</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1629730071378-040243be1ea1?auto=format&fit=crop&w=600&q=80" alt="Melati Mini plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1629730071378-040243be1ea1?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Melati Mini</h4>
-              <p>Fragrant Groundcover</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1659779357064-ba36bba78c94?auto=format&fit=crop&w=600&q=80" alt="Pucuk Merah plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1659779357064-ba36bba78c94?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Pucuk Merah</h4>
-              <p>Privacy Shrub</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1595055018659-335bb951811e?auto=format&fit=crop&w=600&q=80" alt="Liriope plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1595055018659-335bb951811e?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Liriope</h4>
-              <p>Border Plant</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=600&q=80" alt="Monstera Mini plants" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Monstera Mini</h4>
-              <p>Tropical Foliage</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?auto=format&fit=crop&w=600&q=80" alt="Natural stone materials" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1590725140246-20acdee442be?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Natural Stone</h4>
-              <p>Material Palette</p>
-            </div>
-          </div>
-          <div class="gallery-grid__item" data-reveal>
-            <img src="https://images.unsplash.com/photo-1578885136359-16c8bd4d3a8e?auto=format&fit=crop&w=600&q=80" alt="Lava stone materials" loading="lazy" data-lightbox="https://images.unsplash.com/photo-1578885136359-16c8bd4d3a8e?auto=format&fit=crop&w=1200&q=80">
-            <div class="gallery-grid__overlay">
-              <h4>Lava Stone</h4>
-              <p>Material Palette</p>
-            </div>
-          </div>
+          <div class="photo-carousel__progress" aria-hidden="true"><span data-carousel-progress></span></div>
         </div>
       </div>
     </section>
