@@ -36,9 +36,24 @@
 /* Logo */
 .site-logo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.site-logo__mark {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-logo__text {
+  display: flex;
   flex-direction: column;
   gap: 2px;
-  flex-shrink: 0;
 }
 
 .site-logo__brand {
